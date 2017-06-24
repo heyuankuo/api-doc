@@ -1,10 +1,10 @@
 说明： 使用线性变换转换矩阵
 
 	/**
-	 * @param		size		[in]		输入矩阵
-	 * @param		size		[out]		输出矩阵
-	 * @param		size		[in]		比例因子，用于比例缩放
-	 * @param		size		[in]		该加数被加到输入数组元素按比例缩放后得到的元素上 
+	 * @param		src		[in]		输入矩阵
+	 * @param		dst		[out]		输出矩阵
+	 * @param		scale	[in]		比例因子，用于比例缩放
+	 * @param		shift	[in]		该加数被加到输入数组元素按比例缩放后得到的元素上 
 	 */
 	CVAPI(void)  cvConvertScale( 	const CvArr* src, 
 									CvArr* dst,
