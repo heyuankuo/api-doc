@@ -1,0 +1,6 @@
+说明 ：
+	此函数载入一个 二位矩阵 ，返回一个带有整形宽高的结构体
+	
+	CvSize cvGetSize( const CvArr* arr )
+
+注： 若需要返回带有浮点型数据宽高，则选用CvSize的变体类型CvSize2D32f（不明白）

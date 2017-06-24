@@ -1,0 +1,22 @@
+说明： 分配存储空间并返回首地址
+	
+	/**
+	 * @param		size		[in]		分配的矩阵的尺寸信息
+	 * @param		depth		[in]		图像元素的位深度，见备注
+	 * @param		channels	[in]		每个元素（像素）通道数, 见备注
+	 */
+	IplImage* cvCreateImage( CvSize size, int depth, int channels )
+
+注 ：
+	
+	depth 图像元素的位深度，可以是下面的其中之一：
+	IPL_DEPTH_8U - 无符号8位整型
+	IPL_DEPTH_8S - 有符号8位整型
+	IPL_DEPTH_16U - 无符号16位整型
+	IPL_DEPTH_16S - 有符号16位整型
+	IPL_DEPTH_32S - 有符号32位整型
+	IPL_DEPTH_32F - 单精度浮点数
+	IPL_DEPTH_64F - 双精度浮点数
+	
+	channels 每个元素（像素）通道数
+	可以是 1, 2, 3 或 4.通道是交叉存取的，例如通常的彩色图像数据排列是：b0 g0 r0 b1 g1 r1 ... 虽然通常 IPL 图象格式可以存贮非交叉存取的图像，并且一些OpenCV 也能处理他, 但是这个函数只能创建交叉存取图像.

@@ -1,0 +1,6 @@
+说明 ：
+	分配矩阵空间，返回矩阵首地址
+	
+	CvMat* cvCreateMat(int rows, int cols, int type)
+
+注： 若需要返回带有浮点型数据宽高，则选用CvSize的变体类型CvSize2D32f（不明白）
