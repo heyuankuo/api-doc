@@ -1,0 +1,6 @@
+说明 ：
+	Creates an image header but does not allocate the image data.
+	
+	IplImage* cvCreateImageHeader(CvSize size, int depth, int channels)
+
+注： 

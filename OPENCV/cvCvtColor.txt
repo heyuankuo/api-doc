@@ -1,0 +1,6 @@
+说明 ：
+	Converts an image from one color space to another.
+	
+	void cvCvtColor(const CvArr* src, CvArr* dst, int code)
+
+注： 
